@@ -1,16 +1,13 @@
-/// <reference path="React.ts" />
+/// <reference path="./React.ts" />
 
 namespace Subjects {
 
     export interface Teacher {
         experienceTeachingJava?: number;
     }
-    export class Java {
+    export class Java extends Subject{
         teacher: Subjects.Teacher;
 
-        constructor(teacher: Subjects.Teacher) {
-          this.teacher = teacher;
-        }
 
         getRequirements(): string {
             return 'Here is the list of requirements for Java';

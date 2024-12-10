@@ -1,4 +1,4 @@
-/// <reference path="Cpp.ts" />
+/// <reference path="./Cpp.ts" />
 
 namespace Subjects {
 
@@ -6,13 +6,9 @@ namespace Subjects {
         experienceTeachingReact?: number;
     }
 
-    export class React {
+    export class React extends Subject{
 
         teacher: Subjects.Teacher;
-
-        constructor(teacher: Subjects.Teacher) {
-          this.teacher = teacher;
-        }
 
         getRequirements(): string{
             return 'Here is the list of requirements for React';
