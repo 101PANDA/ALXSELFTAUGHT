@@ -17,12 +17,3 @@ const updatedRow:RowElement = {
 CRUD.updateRow(newROwID, updatedRow);
 CRUD.deleteRow(newROwID);
 
-export const cpp: Subjects.Cpp;
-export const java: Subjects.Java;
-export const react: Subjects.React;
-
-export const cTeacher: Subjects.Teacher ={
-    firstName: row.firstName,
-    lastName: row.lastName,
-    experienceTeachingC: 10,
-}
